@@ -1,0 +1,312 @@
+html { 
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0; 
+    padding: 0; 
+    background-color: black; 
+}
+
+nav { 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    height: 4em; 
+    background-color: black; 
+    color: white; 
+    padding-left: 2em;
+}
+
+#logo-mobile { 
+    display: none; 
+}
+
+ul li { 
+    display: inline-block; 
+    text-decoration: none; 
+    list-style-type: none;
+    margin: 0;
+    padding-right: 2em; 
+    font-size: 15px;  
+}
+
+a{
+    text-decoration: none; 
+    color: white; 
+}
+
+a:hover { 
+    color: #F84B4B;
+}
+
+#special-element { 
+    font-family: 'Open Sans';
+    font-size: 15px;  
+    color: #F84B4B; 
+    background-color: black; 
+    border-color: #F84B4B;
+    border: bold; 
+    border-width: 3px;
+    border-radius: 6px; 
+    width: 100px; 
+    transition-duration: 0.4s;
+}
+
+#special-element:hover { 
+    color: white; 
+    background-color: #F84B4B;
+}
+
+#special-element:active {
+    border-style: outset;
+}
+
+#form-text { 
+    outline: none; 
+    font-family: 'Open Sans';
+    width: 250px;
+    resize: none;  
+
+}
+
+#drop-down-menu { 
+    display: none; 
+    position: absolute; 
+    float: left; 
+    top: 0px; 
+    height: 200px; 
+    width: 100%; 
+    background-color: rgb(75, 75, 75); 
+}
+
+.nav-link-drop { 
+    display: block; 
+    height: 40px; 
+    padding-left: 20px; 
+    padding-top: 10px; 
+}
+
+.nav-link-drop:active { 
+    background-color: white; 
+}
+
+/* BOX JUSTIFY ELEMENTS */
+
+.box-justify-center {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.box-justify-center-a {
+    display: flex; 
+    justify-content: center;
+}
+
+
+.box-justify-between {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.box-justify-between-display {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.box { 
+    display: block;
+    width: 70%; 
+}
+
+.box-display { 
+  height: 40em;  
+  width: 33%; 
+  border:1px solid black;
+  text-align: center; 
+}
+
+.box-display:hover{
+    transition: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 20px 20px #2f2f2f;
+}
+
+.box-title { 
+    display: flex; 
+    align-items: center; 
+    padding-left: 50px; 
+}
+
+#box-container { 
+    height: 50em; 
+    width: 80%;
+}
+
+.icon { 
+    display: none; 
+}
+
+.box-skill { 
+    height: 20em;  
+    width: 20%; 
+    border:1px solid black;
+    text-align: center; 
+}
+
+.box-skill:hover{
+    transition: 1s;
+    transition-timing-function: ease-out;
+    box-shadow: 0 0 20px 20px #2f2f2f;
+}
+
+/* ABOUT SECTION */
+
+#about-section { 
+    height: 62em; 
+    width: 100%; 
+}
+
+#about-section-name { 
+    height: 62em; 
+    width: 50%; 
+}
+
+#about-section-info { 
+    height: 62em; 
+    width: 50%;
+}
+
+.fn-ln { 
+    font-size: 80px; 
+}
+
+/* SKILLS SECTION */ 
+#skill-container-parent { 
+    flex-direction: column; 
+    background-color: white;
+}
+
+
+#skill-container { 
+    height: 50em; 
+    background-color: white;
+}
+
+/*CERTIFCATION SECTION */
+
+#cert-section-id { 
+    height: 52em; 
+    background-color: white; 
+}
+
+/* CONTTAC SECTION */
+#gmail { 
+    overflow-x: hidden; 
+}
+
+/* MOBILE DESIGN */
+
+@media only screen and (max-width: 800px) {
+    html { 
+        overflow-x: hidden; 
+    }
+
+    body {
+      background-color: black; 
+      position: relative; 
+      width: 100%; 
+    }
+
+    a{ 
+        display: none; 
+    }
+
+    #special-element {
+        display: none;
+    }
+
+    #drop-down-menu { 
+        display: none; 
+    }    
+
+    .icon { 
+        display: inline-block; 
+        color: white;  
+        font-size: 20px;
+        vertical-align: middle;
+        text-align: center; 
+        margin-right: 20px; 
+    }
+
+
+    .box-display {
+        width: 100%;  
+        margin-top: 10px;    
+    }
+
+    #logo { 
+        display: none; 
+    }
+
+    #logo-mobile { 
+        display: inline-block; 
+    }
+
+    /* ABOUT SECTION */
+    #about-section { 
+        display: flex;
+        flex-direction: column; 
+        width: 60%;  
+        height: 60em; 
+    }
+
+    #about-section-info { 
+        display: flex; 
+        justify-content: flex-end;  
+        width: 200%;
+        background-color: black;  
+    }
+
+    #about-section-name { 
+        display: none;  
+    }
+
+    .fn-ln { 
+        font-size: 50px; 
+    }
+    /* PROJECTS SECTION */
+    #box-container { 
+        flex-direction: column; 
+    }
+
+    /* SKILLS SECTION */
+    #skill-container { 
+        flex-direction: column; 
+    }
+
+    .box-skill { 
+        width: 100%; 
+        margin-top: 10px;  
+    }
+
+    /* CERTIFICATION SECTION */
+    #cert-section-id{ 
+        height: 75em; 
+        align-items: flex-start; 
+        width: 100%; 
+    }
+
+    /* CONTACT SECTION */ 
+
+    #contact-gmail-footer { 
+        display: flex; 
+        justify-content: center; 
+    }
+
+    #gmail { 
+        font-size: 12px; 
+    }
+  }

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elham Sultany</title>
+        <link rel = "stylesheet" href = "style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body style = "font-family: 'Open Sans';">
+        <nav>
+            <h2 id = "logo"><span style = "color: #F84B4B;">E</span>.<span style = "color: #F84B4B;">S</span>.</h2>
+            <h2 id = "logo-mobile"><span style = "color: #F84B4B;">E</span>lham.<span style = "color: #F84B4B;">S</span>ultany.</h2>
+            <ul class = "ul-li justify-content-end">
+                <li><a class = "nav-link" href = "#project-section">Projects</a></li>
+                <li><a class = "nav-link" href = "#skill-section">Skills</a></li>
+                <li><a class = "nav-link" href = "#cert-section">Certifications</a></li>
+                <li><button class = "nav-link" onClick="document.getElementById('contact-section').scrollIntoView();" id = "special-element">Contact</button></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <div id = "drop-down-menu">
+            <button id = "exit" style = "float: right; outline: none; border: none; width: 50px; height: 50px; font-size: 20px; font-weight: bold; background-color: rgb(75, 75, 75)" onclick="exitmenu()">x</button>
+            <a class = "nav-link-drop" href = "#project-section" onclick="exitmenu()">Projects</a>
+            <a class = "nav-link-drop" href = "#skill-section" onclick="exitmenu()">Skills</a>
+            <a class = "nav-link-drop" href = "#cert-section" onclick="exitmenu()">Certifications</a>
+            <a class = "nav-link-drop" href = "#contact-section" onclick="exitmenu()">Contact</a>
+        </div>
+        <!-- ABOUT SECTION -->
+        <div id = "about-section" class = "box-justify-between" >
+            <div id = "about-section-name" class = "box-justify-center">
+                <div class = "box">
+                    <h1 class = "fn-ln" style = "color: white; "><span style = "color: #F84B4B;">E</span>lham</h1>
+                    <h1 class= "fn-ln" style = "color: white; "><span style = "color: #F84B4B;">S</span>ultany<span style = "color: #F84B4B;">...</span></h1>
+                </div>
+            </div>
+            <div id = "about-section-info"  class = "box-justify-center">
+                <div class = "box">
+                    <h2 style = "color: white; ">About Me</h2>
+                    <p style = "color: white; ">I am an aspiring<span style = "color: #F84B4B;"> Cloud Solutions Architect.</span>I am currently an undergraduate at George Mason University and pursuing a degree in Cloud Computing.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--PROJECTS SECTION-->
+        <div id = "project-section"class = "box-title" style = "height: 10em; background-color: white; ">
+            <h2 style = "font-size: 45px; ">Projects</h1>
+        </div>
+        <div class = "box-justify-center" style = "height: 52em; background-color: white; ">
+            <div id = "box-container" class = "box-justify-between-display" style = "height: 50em; width: 80%; ">
+                <div class = "box-display">
+                    <h3>Secure Password Generator</h3>
+                    <p><b>Tools Used: </b>Java, Swing</p>
+                    <p style = "margin: 50px; ">Utilizing the Swing widget, the Graphical User Interface was created, the Abstract Window Toolkit was imported to handle action events, and the Util library was employed to make use of the 128-bit value unique identifier UUID.                    </p>
+                    <a href = "https://github.com/elhamsultanyahmad/Strong-Password-Generator" style = "color: blue ">Secure Password Generator - Github</a>
+                </div>
+                <div class = "box-display">
+                    <h3>Guess Random Number Game</h3>
+                    <p><b>Tools Used: </b>Python, Tkinter</p>
+                    <p style = "margin: 50px; ">A game in which you enter a number between 0 and 10, in order to guess the randomly generated number. If your guess is correct, the score will be increased by one, and vice versa.</p>
+                    <a href = "https://github.com/elhamsultanyahmad/Guess-Random-Number-Game" style = "color: blue ">Guess Random Number Game - Github</a>
+                </div>
+               
+            </div>
+        </div>
+
+        <!--SKILLS SECTION -->
+        <div id = "skill-section" class = "box-title" style = "height: 10em; background-color: white; ">
+            <h2 style = "font-size: 45px; ">Skills</h1>
+        </div>
+        <div id = "skill-container-parent" class = "box-justify-center">
+            <div id = "skill-container" class = "box-justify-between-display" style = "height: 25em; width: 80%; ">
+                <div class = "box-skill">
+                    <h3>HTML</h3>
+                </div>
+                <div class = "box-skill">
+                    <h3>CSS</h3>
+                </div>
+                <div class = "box-skill">
+                    <h3>JavaScript</h3>
+                </div>
+                <div class = "box-skill">
+                    <h3>Java - Intermediate</h3>
+                </div>
+            </div>
+            <div id = "skill-container" class = "box-justify-between-display" style = "height: 25em; width: 80%; margin-top: 10px; ">
+                <div class = "box-skill">
+                    <h3>Python - Proficient</h3>
+                </div>
+                <div class = "box-skill">
+                    <h3>React - Beginner</h3>
+                </div>
+                <div class = "box-skill">
+                    <h3>SQL - Intermediate</h3>
+                </div>
+                <div class = "box-skill">
+                    <h3>Linux - Beginner</h3>
+                </div>
+            </div>
+        </div>
+
+        <!--CERTIFICATIONS SECTION -->
+        <div id = "cert-section" class = "box-title" style = "height: 10em; background-color: white; ">
+            <h2 style = "font-size: 45px; ">Certifications</h1>
+        </div>
+        <div id = "cert-section-id" class = "box-justify-center">
+            <div id = "box-container" class = "box-justify-between-display">
+                <div class = "box-display">
+                    <h2>Microsoft Office Specialist</h2>
+                    <p><b>Exam:</b> Microsoft Office Specialist (2016)<br> <b>Date Received: </b> 8/20/2016</p>
+                    <img src = "microsoftoffice.png" style = "width: 200px; height: 200px;">
+                </div>
+                <div class = "box-display">
+                    <h2>IC3 Digital Literacy Master</h2>
+                    <p><b>Exam:</b> IC3 Digital Literacy Master <br> <b>Date Received: </b> 9/12/2021</p>
+                    <img src = "ic3master.png" style = "width: 200px; height: 200px;">
+                </div>
+                <div class = "box-display">
+                    <h2>IC3 GS6 Level 2</h2>
+                    <p><b>Exam:</b> IC3 GS6 Level 2 Digital Literacy<br> <b>Date Received: </b> 8/12/2021</p>
+                    <img src = "ic3level2.png" style = "width: 200px; height: 200px;">
+                </div>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION -->
+        <div id = "contact-section" class = "box-justify-between" style = "height: 5em;">
+            <div id = "contact-button-footer" class = "box-justify-center-a" style = "width: 50%;">
+                <span class = "counter" style = "color: white;">Couldn't Read Views</span>
+            </div>
+            <div id = "contact-gmail-footer" class = "box-justify-center-a" style = "width: 50%;"">
+                <h3 id = "gmail" style = "color: white; ">Contact me @ - elhamasultany@gmail.com</h3>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("drop-down-menu");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+                console.log('block');
+              }
+            }
+
+            function exitmenu(){ 
+                var x = document.getElementById("drop-down-menu"); 
+                x.style.display = "none";
+            }
+
+            counter = document.querySelector('.counter')
+            async function updateCounter() {
+                try {
+                    let response = await fetch('https://xjim4ah3p6cyrprjjn7qj3o5pm0ywymt.lambda-url.us-east-1.on.aws/');
+                    let data = await response.json();
+                    counter.innerHTML = `Views: ${data}`;
+                    console.log(data);
+                } catch (error) {
+                    console.error('Error updating counter:', error);
+                }
+            }
+
+            updateCounter(); 
+
+            </script>
+            <script src = "index.js"></script>
+    </body>
+</html>
